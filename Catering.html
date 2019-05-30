@@ -1,0 +1,811 @@
+
+<!-- Basic layout for any bootstrap application, copy and paste this
+for any new bootstrap Application. -->
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Homestyle Paradise </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale-1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+ 
+ .col-md .card img 
+{
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+.icon
+{
+  padding: .3em;
+  color: white;
+}
+
+.carousel 
+{
+  width: 30%;
+  height:360px;
+
+  text-align: center;
+}
+
+
+body 
+{
+  font-family: 'Luckiest Guy', cursive;
+}
+
+path 
+{
+  fill: transparent;
+}
+
+#title 
+{
+  color: #FF9800;
+  font-size: 45px;
+  text-align: center;
+}
+
+#carouselExampleControls
+{
+  text-align: center;
+}
+
+.card
+{
+  text-align: center;
+}
+
+.footer 
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+
+
+
+.menu {
+				margin-bottom: 15px;
+				max-width: 1200px;
+    			margin: 0 auto;
+			}
+			.menu_restName {
+				text-align: center;
+    			font-size: 70px;
+    			margin-top: 0;
+			}
+			.menu_title {
+				text-align: center;
+			}
+			.menu_section {
+				margin-bottom: 30px;
+			}
+			.menu_section h3 {
+				font-style: italic;
+			}
+			.menu_item {
+				margin: 0 15px;
+				position: relative;
+			}
+			.menu_item h4 {
+				margin-bottom: 0px;
+			}
+			.price {
+				display: block;
+				float: right;
+				position: absolute;
+				bottom: 0px;
+				right: 0;
+				background-color: white;
+				font-weight: bold;
+			}
+			.description {
+				margin-top: 5px;
+				font-style: italic;
+				background-color: white;
+				display: inline-block;
+				max-width: 50%;
+			}
+			hr {
+				border: none;
+    			border-top: 1px dotted black;
+    			margin-top: -20px;
+			}
+			footer:not(.app-footer) {
+				text-align: center;
+    			font-size: 11px;
+				font-style: italic;
+			}
+			@media (max-width: 575px) {
+				.menu_title {
+					text-align: center;
+					font-size: 30px;
+				}
+				.menu_section h3 {
+					text-align: center;
+    				font-size: 30px;
+				}
+				.menu_item {
+					text-align: center;
+				}
+				.price {
+					float: none;
+					position: static;
+					margin-top: 15px;
+				}
+				hr {
+					display: none;
+				}
+			}
+
+
+
+
+
+
+
+</style>
+
+
+
+ </head>
+ <body>
+
+
+  <div class="container">
+
+
+
+  <!-- Nav Bar -->
+  <div id = "nav-bar">
+
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Homestyle Paradise: </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Catering Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Drop Off Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Merchandise</a>
+                </li>
+            </ul>
+
+        
+
+
+             <!-- Right buttons(Nested in navbar) -->
+                            <!-- Make Responsive -->
+
+                            <ul class="nav navbar-nav navbar-right"> 
+                                <li>   <a href ="https://www.linkedin.com/in/brandon-henry-95427a138/">  <i class="fab fa-facebook fa-2x icon"></i> </a> </li>
+                                <br/>
+                                <li> <a href ="https://github.com/bhenry1">  <i class="fab fa-instagram fa-2x icon"></i>  </a> </li>
+                                <br/>
+                                <li> <a href ="https://github.com/bhenry1">  <i class="fab fa-snapchat-ghost fa-2x icon"></i> </i>  </a> </li>
+
+                            </ul>
+                            </div>
+           </div>
+        </nav>
+
+
+
+<section class="menu"><h1 class="menu_restName">Homestyle Paradise</h1><h2 class="menu_title">Catering Menu</h2><div class="menu_section menu_section_15584844029"><h3>Entrees </h3>
+    <div class="menu_item menu_item_15584849367">
+      <h4 class="name">Hawaiian chicken BBQ sliders </h4>
+      <span class="price">$10.00</span>
+      <p class="description">Description here</p>
+      <hr>
+    </div>
+
+    <div class="menu_item menu_item_15584849367">
+        <h4 class="name">Pull apart burger sliders</h4>
+        <span class="price">$10.00</span>
+        <p class="description">Description here</p>
+        <hr>
+    </div>
+
+    <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Jerk chicken</h4>
+          <span class="price">$10.00</span>
+          <p class="description">Description here</p>
+          <hr>
+    </div>
+
+    <div class="menu_item menu_item_15584849367">
+        <h4 class="name">Chicken wings</h4>
+        <span class="price">$10.00</span>
+        <p class="description">Description here</p>
+        <hr>
+  </div>
+
+  <div class="menu_item menu_item_15584849367">
+      <h4 class="name">Herb roasted chicken</h4>
+      <span class="price">$10.00</span>
+      <p class="description">Description here</p>
+      <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Jerk BBQ wings</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Brown stew chicken</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Pulled chicken/pork</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Fried chicken wings</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Honey ham</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Grill chicken</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Salmon</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Ribs</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Shrimp</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Steak</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Grilled/sauteed pork chops </h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Rasta pasta</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">BBQ/sauteed Meatballs</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Chicken Fajita</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Turkey wraps</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Buffalo chicken wraps</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Veggie wraps</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Turkey cheeseburger sliders</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Sauteed sausage and peppers</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Roasted vegetable medley</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Cajun shrimp and turkey sausage alfredo</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Pork chops</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Chicken Fajita</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Chicken noodle soup & bread</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Broccoli cheddar soup & bread</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+
+    <!-- Sides -->
+        </div>
+        
+        <div class="menu_section menu_section_15584852064"><h3>Sides</h3>
+          <div class="menu_item menu_item_15584852376">
+            <h4 class="name">Mac &amp; Cheese</h4>
+            <span class="price">Price Here</span>
+            <p class="description">Description Here</p>
+            <hr>
+          </div>
+
+    
+      
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Potato salad</h4>
+          <span class="price">Price Here </span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+      
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Loaded Potato salad</h4>
+          <span class="price">Price Here </span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+      
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">House salad</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+      
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">White rice</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+      
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Rice and peas</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Roasted potatoes</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Cornbread muffins</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Roasted butternut squash</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Steamed Corn</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Sauteed Cabbage</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Sauteed cabbage with shrimp & sausage</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Baked beans</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Mashed potatoes</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Sauteed potatoes</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Steamed broccoli</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Vegetable medley</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name"> Red/ black beans(separately) & rice</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Asparagus</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Sauteed string beans</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Cucumber tomato salad</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Fried plantain</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Black beans</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Sweet Dinner rolls</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Corn casserole</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Collard greens</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Yellow Rice</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Fried rice</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Homestyle fries</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Sauteed quinoa and spinach</h4>
+          <span class="price">Price Here</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+     
+            
+
+        
+
+        </div>
+        
+        
+        
+     
+
+          <!-- Bar -->
+        
+        <div class="menu_section menu_section_15584852736"><h3>Bar</h3>
+          <div class="menu_item menu_item_15584852846">
+            <h4 class="name">Full nacho bar </h4>
+            <span class="price">Price Here</span>
+            <p class="description">Description Here</p>
+            <hr>
+          </div>
+
+          <div class="menu_item menu_item_15584852846">
+              <h4 class="name">Burrito bar</h4>
+              <span class="price">Price Here</span>
+              <p class="description">Description Here</p>
+              <hr>
+            </div>
+
+            <div class="menu_item menu_item_15584852846">
+                <h4 class="name">Wing bar</h4>
+                <span class="price">Price Here</span>
+                <p class="description">Description Here</p>
+                <hr>
+              </div>
+
+              <div class="menu_item menu_item_15584852846">
+                  <h4 class="name">Build your own salad bar</h4>
+                  <span class="price">Price Here</span>
+                  <p class="description">Description Here</p>
+                  <hr>
+                </div>
+
+
+          <!-- Deserts -->
+        </div>
+        <div class="menu_section menu_section_15584853090"><h3>Desserts</h3>
+          <div class="menu_item menu_item_15584857340">
+            <h4 class="name">Bread pudding</h4>
+            <span class="price">Price Here</span>
+            <p class="description">Description Here</p>
+            <hr>
+          </div>
+
+          <div class="menu_item menu_item_15584857340">
+              <h4 class="name">Banana pudding</h4>
+              <span class="price">Price Here</span>
+              <p class="description">Description Here</p>
+              <hr>
+            </div>
+
+            <div class="menu_item menu_item_15584857340">
+                <h4 class="name">Peach cobbler</h4>
+                <span class="price">Price Here</span>
+                <p class="description">Description Here</p>
+                <hr>
+              </div>
+
+              <div class="menu_item menu_item_15584857340">
+                  <h4 class="name">Assorted sweets bar</h4>
+                  <span class="price">Price Here</span>
+                  <p class="description">Description Here</p>
+                  <hr>
+                </div>
+
+                <div class="menu_item menu_item_15584857340">
+                    <h4 class="name">Sweet potato souffle</h4>
+                    <span class="price">Price Here</span>
+                    <p class="description">Description Here</p>
+                    <hr>
+                  </div>
+
+                  
+                <div class="menu_item menu_item_15584857340">
+                    <h4 class="name">Smores bar</h4>
+                    <span class="price">Price Here</span>
+                    <p class="description">Description Here</p>
+                    <hr>
+                  </div>
+
+                  <div class="menu_item menu_item_15584857340">
+                      <h4 class="name">Pineapple upside down cake</h4>
+                      <span class="price">Price Here</span>
+                      <p class="description">Description Here</p>
+                      <hr>
+                    </div>
+
+                    
+                  <div class="menu_item menu_item_15584857340">
+                      <h4 class="name">Cheesecake</h4>
+                      <span class="price">Price Here</span>
+                      <p class="description">Description Here</p>
+                      <hr>
+                    </div>
+
+                    <div class="menu_item menu_item_15584857340">
+                        <h4 class="name">Loaded brownies</h4>
+                        <span class="price">Price Here</span>
+                        <p class="description">Description Here</p>
+                        <hr>
+                      </div>
+
+                      <div class="menu_item menu_item_15584857340">
+                          <h4 class="name">Strawberry shortcake with a fresh strawberry sauce</h4>
+                          <span class="price">Price Here</span>
+                          <p class="description">Description Here</p>
+                          <hr>
+                        </div>
+    
+  
+
+          
+        </div> </section>
+
+        <div class="footer">
+
+            <p>
+            For orders & Info call and text (678) 451-6626 
+            Email: kareena_lee92@yahoo.com Instagram: _just_alittlebit
+            </p>
+          </div>
+        
+  
+
+
+  
+
+
+
+
+
+
+                
+
+
+              
+                   
+
+
+
+
+
+
+            
+</body>
+</html>

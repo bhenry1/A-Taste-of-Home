@@ -1,0 +1,430 @@
+
+<!-- Basic layout for any bootstrap application, copy and paste this
+for any new bootstrap Application. -->
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Homestyle Paradise </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale-1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+ 
+ .col-md .card img 
+{
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+.icon
+{
+  padding: .3em;
+  color: white;
+}
+
+.carousel 
+{
+  width: 30%;
+  height:360px;
+
+  text-align: center;
+}
+
+
+body 
+{
+  font-family: 'Luckiest Guy', cursive;
+}
+
+path 
+{
+  fill: transparent;
+}
+
+#title 
+{
+  color: #FF9800;
+  font-size: 45px;
+  text-align: center;
+}
+
+#carouselExampleControls
+{
+  text-align: center;
+}
+
+.card
+{
+  text-align: center;
+}
+
+.footer 
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+
+
+
+.menu {
+				margin-bottom: 15px;
+				max-width: 1200px;
+    			margin: 0 auto;
+			}
+			.menu_restName {
+				text-align: center;
+    			font-size: 70px;
+    			margin-top: 0;
+			}
+			.menu_title {
+				text-align: center;
+			}
+			.menu_section {
+				margin-bottom: 30px;
+			}
+			.menu_section h3 {
+				font-style: italic;
+			}
+			.menu_item {
+				margin: 0 15px;
+				position: relative;
+			}
+			.menu_item h4 {
+				margin-bottom: 0px;
+			}
+			.price {
+				display: block;
+				float: right;
+				position: absolute;
+				bottom: 0px;
+				right: 0;
+				background-color: white;
+				font-weight: bold;
+			}
+			.description {
+				margin-top: 5px;
+				font-style: italic;
+				background-color: white;
+				display: inline-block;
+				max-width: 50%;
+			}
+			hr {
+				border: none;
+    			border-top: 1px dotted black;
+    			margin-top: -20px;
+			}
+			footer:not(.app-footer) {
+				text-align: center;
+    			font-size: 11px;
+				font-style: italic;
+			}
+			@media (max-width: 575px) {
+				.menu_title {
+					text-align: center;
+					font-size: 30px;
+				}
+				.menu_section h3 {
+					text-align: center;
+    				font-size: 30px;
+				}
+				.menu_item {
+					text-align: center;
+				}
+				.price {
+					float: none;
+					position: static;
+					margin-top: 15px;
+				}
+				hr {
+					display: none;
+				}
+			}
+
+
+
+
+
+
+
+</style>
+
+
+
+ </head>
+ <body>
+
+
+  <div class="container">
+
+
+
+  <!-- Nav Bar -->
+  <div id = "nav-bar">
+
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Homestyle Paradise: </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Catering Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Drop Off Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Merchandise</a>
+                </li>
+            </ul>
+
+        
+
+
+             <!-- Right buttons(Nested in navbar) -->
+                            <!-- Make Responsive -->
+
+                            <ul class="nav navbar-nav navbar-right"> 
+                                <li>   <a href ="https://www.linkedin.com/in/brandon-henry-95427a138/">  <i class="fab fa-facebook fa-2x icon"></i> </a> </li>
+                                <br/>
+                                <li> <a href ="https://github.com/bhenry1">  <i class="fab fa-instagram fa-2x icon"></i>  </a> </li>
+                                <br/>
+                                <li> <a href ="https://github.com/bhenry1">  <i class="fab fa-snapchat-ghost fa-2x icon"></i> </i>  </a> </li>
+
+                            </ul>
+                            </div>
+           </div>
+        </nav>
+
+
+
+<section class="menu"><h1 class="menu_restName">Homestyle Paradise</h1><h2 class="menu_title">Drop-Off Menu</h2><div class="menu_section menu_section_15584844029"><h3>Entrees </h3>
+    <div class="menu_item menu_item_15584849367">
+      <h4 class="name"> Curry chicken with white rice</h4>
+      <span class="price">$10.00</span>
+      <p class="description">Description here</p>
+      <hr>
+    </div>
+
+    <div class="menu_item menu_item_15584849367">
+        <h4 class="name">Jerk chicken with rice and peas</h4>
+        <span class="price">$10.00</span>
+        <p class="description">Description here</p>
+        <hr>
+    </div>
+
+    <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Herb roasted chicken with roasted potatoes</h4>
+          <span class="price">$10.00</span>
+          <p class="description">Description here</p>
+          <hr>
+    </div>
+
+    <div class="menu_item menu_item_15584849367">
+        <h4 class="name">Rasta pasta</h4>
+        <span class="price">$10.00</span>
+        <p class="description">Description here</p>
+        <hr>
+  </div>
+
+  <div class="menu_item menu_item_15584849367">
+      <h4 class="name">Cajun shrimp and turkey sausage alfredo</h4>
+      <span class="price">$10.00</span>
+      <p class="description">Description here</p>
+      <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Chicken alfredo</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Grill chicken/ shrimp with asparagus and broccoli</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Cauliflower chicken and shrimp fried rice</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">Shrimp burrito bowl</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+<div class="menu_item menu_item_15584849367">
+    <h4 class="name">BBQ chicken with butternut squash & string beans</h4>
+    <span class="price">$10.00</span>
+    <p class="description">Description here</p>
+    <hr>
+</div>
+
+ 
+
+    <!-- Sides -->
+        </div>
+        
+        <div class="menu_section menu_section_15584852064"><h3>Sides</h3>
+          <div class="menu_item menu_item_15584852376">
+            <h4 class="name">Mac &amp; Cheese</h4>
+            <span class="price">$4.00</span>
+            <p class="description">Description Here</p>
+            <hr>
+          </div>
+
+    
+      
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Fruit salad</h4>
+          <span class="price">$3.00 </span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+      
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Zucchini fried rice</h4>
+          <span class="price">$4.00 </span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+      
+      <div class="menu_item menu_item_15584849367">
+          <h4 class="name">Broccoli</h4>
+          <span class="price">$3.00</span>
+          <p class="description">Description here</p>
+          <hr>
+      </div>
+        </div>
+        
+        
+        
+     
+
+          <!-- Salads -->
+        
+        <div class="menu_section menu_section_15584852736"><h3>Salads</h3>
+          <div class="menu_item menu_item_15584852846">
+            <h4 class="name">Loaded grilled chicken salad</h4>
+            <span class="price">$7.00</span>
+            <p class="description">Description Here</p>
+            <hr>
+          </div>
+
+          <div class="menu_item menu_item_15584852846">
+              <h4 class="name">Loaded shrimp salad</h4>
+              <span class="price">$7.00</span>
+              <p class="description">Description Here</p>
+              <hr>
+            </div>
+
+            <div class="menu_item menu_item_15584852846">
+                <h4 class="name">Loaded vegetarian salad</h4>
+                <span class="price">$7.00</span>
+                <p class="description">Description Here</p>
+                <hr>
+              </div>
+
+              <div class="menu_item menu_item_15584852846">
+                  <h4 class="name">Honey glazed salmon salad</h4>
+                  <span class="price">$12.00</span>
+                  <p class="description">Description Here</p>
+                  <hr>
+                </div>
+
+
+          <!-- Deserts -->
+        </div>
+        <div class="menu_section menu_section_15584853090"><h3>Desserts</h3>
+          <div class="menu_item menu_item_15584857340">
+            <h4 class="name">Bread pudding</h4>
+            <span class="price">$5.00</span>
+            <p class="description">Description Here</p>
+            <hr>
+          </div>
+
+          
+
+          
+        </div> 
+
+
+        <!-- Meal Prep -->
+        <div class="menu_section menu_section_15584853090"><h3>Meal Prep</h3>
+          <ul>
+            <li>     Dr. Sebi inspired prep  </li>
+            <li>         Keto meal prep  </li>
+          </ul>
+          </div>
+
+          
+
+          
+        </div> 
+      
+      
+      
+      </section>
+
+        <div class="footer">
+
+            <p>
+            For orders & Info call and text (678) 451-6626 
+            Email: kareena_lee92@yahoo.com Instagram: _just_alittlebit
+            </p>
+          </div>
+        
+  
+
+
+  
+
+
+
+
+
+
+                
+
+
+              
+                   
+
+
+
+
+
+
+            
+</body>
+</html>
